@@ -327,6 +327,11 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
+      <artifactId>weka</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
       <artifactId>woodstox-core-asl-4.4.1</artifactId>
       <version>6.0.0</version>
     </dependency>
