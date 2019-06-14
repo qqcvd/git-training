@@ -242,51 +242,6 @@
       <column defaultValue="" key="false" length="1024" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tHDFSCompare" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="288">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHDFSCompare_1"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="EMR_5_8_0"/>
-    <elementParameter field="HADOOP_DISTRIBUTION" name="HDFS" value=""/>
-    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" show="false" value=""/>
-    <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MODE" show="false" value="USERNAME"/>
-    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" value="&quot;maprfs:///&quot;"/>
-    <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" value="true"/>
-    <elementParameter field="CHECK" name="USE_KRB" show="false" value="false"/>
-    <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" show="false" value="&quot;nn/_HOST@EXAMPLE.COM&quot;"/>
-    <elementParameter field="CHECK" name="USE_KEYTAB" show="false" value="false"/>
-    <elementParameter field="TEXT" name="PRINCIPAL" show="false" value="&quot;hdfs&quot;"/>
-    <elementParameter field="FILE" name="KEYTAB_PATH" show="false" value="&quot;/tmp/hdfs.headless.keytab&quot;"/>
-    <elementParameter field="CHECK" name="USE_MAPRTICKET" show="false" value="false"/>
-    <elementParameter field="TEXT" name="USERNAME" value="&quot;anonymous&quot;"/>
-    <elementParameter field="TEXT" name="GROUP" show="false" value="&quot;supergroup&quot;"/>
-    <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" show="false" value="0RMsyjmybrE="/>
-    <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" show="false" value="&quot;demo.mapr.com&quot;"/>
-    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" show="false" value="86400L"/>
-    <elementParameter field="CLOSED_LIST" name="COMPARISON_MODE" value="TEXT_CMP"/>
-    <elementParameter field="FILE_HADOOP" name="FILE" value="&quot;&quot;"/>
-    <elementParameter field="FILE_HADOOP" name="FILE_REF" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="DIFFER_MESSAGE" value="&quot;[job &quot; + jobName + &quot;] Files differ&quot;"/>
-    <elementParameter field="TEXT" name="NO_DIFFER_MESSAGE" value="&quot;[job &quot; + jobName + &quot;] Files are identical&quot;"/>
-    <elementParameter field="CHECK" name="PRINT" value="true"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES"/>
-    <elementParameter field="CHECK" name="SET_MAPR_HOME_DIR" show="false" value="false"/>
-    <elementParameter field="TEXT" name="MAPR_HOME_DIR" show="false" value="&quot;/opt/mapr&quot;"/>
-    <elementParameter field="CHECK" name="SET_HADOOP_LOGIN" show="false" value="false"/>
-    <elementParameter field="TEXT" name="HADOOP_LOGIN" show="false" value="&quot;kerberos&quot;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tHDFSCompare_1">
-      <column defaultValue="" key="false" length="255" name="file" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="file_ref" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="0" name="moment" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="50" name="job" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="component" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="1" name="differ" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tCreateTable_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
@@ -302,18 +257,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHDFSCompare_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_50079bf3-e97a-4e4c-a9b3-989a5dda1a6f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dc6eq70p1RBzTrYIFFOABPiWwNA1Q4lF4//DJnQ0bej5U8LtNipXl/9fSz1+NPH8CkqTEM/tK+Yi
-NsSbGMdxNA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_9ada89eb-2374-47ee-829f-a6bdb173775d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Lk0or9YL0wtNyp/LpM/HHziK7/kCDvvrfGFrly4z3HTl3A15P0TYPQoEI5H56jxIkMHXO6/JzBmq
-UmAgF5/t0w==</DigestValue></Reference></SignedInfo><SignatureValue>eSNOtXm/jw6ecnAWPAc0bt7Dcbk17s2JqYn3x+ho23noHItIWOz4cdcFpJ6TBETW8T40E5YjEHov
-3KG1su7rfN1i/tbf/4IRsiKhgBUu15FY2erRlEUdTWPy4lqMoH2GkwpblyvLgrgGH/t19DZt9k4d
-ERlZkQbti+EPm5RkadtZrriLs/DfeP4QHA7D+7vSwbCCnSvmbOwtj65cieIyEKV87ezqY8f5Aca7
-YP/CE5ymSz6E+CQUXDMcPBrQHr7jzaFmSU8aHocyZOj+XQca6/0gmcoyGwAYQkhMV5BzVKMUGOac
-vAtCaOgOTMZaR66ToRWVC/5BJVB5uLdnrNqvOw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_88c56414-2767-40fb-a17e-2ba49cc00c9e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>TfRIG/YWoZsvd3CCSG9eTEAZKD8alYcqltl3GyPc4sKn6Kw/D1z1d/cGPirrUyy7n2Adq50tpsnR
+bDwDLBibsA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_bf62048d-d496-4be5-9b2f-fc3fd7a11d60"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>X17D+4GmQExl/jbbESazTK06arbStwFtmfjPmXEVErrXPCG7b9rja4y1xyPtzzb9lI6Su8Fl+mt2
+fEkheW0kwg==</DigestValue></Reference></SignedInfo><SignatureValue>WcGIrsd5+HaaZk+djxy46N6/YPs7QNHTW9xWUy8xEC50ioyxTSLiSJTYdbiLRBzzv8tmNVbdBuDO
+mCKexp5+AxZaL4kxMhHWnjxk3uP3OR7U6FCbdiUp28UNNUwq0ReyCOHfsXZrUhm03IyVQ2oZFD5/
+BzLE4iepvExH8UfpjaNwc5htVGKfSGkAd+qKuMFe1B16U5cJEMEsjfzRkY74h6c2M/yfInh4gMgN
+VV17OtYxKiMlvUlt+3EowP4msSdtlwC1QIujM2U+IXgSVbASOR0OeXwm44deNHLqk4pxYmJ4hU3z
+E/Mmjz7I4a/wTgFayo33zE+aajIiFkiPd/svZw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -337,4 +287,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_9ada89eb-2374-47ee-829f-a6bdb173775d" Target="#_50079bf3-e97a-4e4c-a9b3-989a5dda1a6f"><Timestamp>2019-06-14 14:12:16</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_bf62048d-d496-4be5-9b2f-fc3fd7a11d60" Target="#_88c56414-2767-40fb-a17e-2ba49cc00c9e"><Timestamp>2019-06-14 14:27:10</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
